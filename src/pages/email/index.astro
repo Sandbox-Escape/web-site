@@ -1,0 +1,93 @@
+---
+import Navbar from "../../components/navbar.astro";
+import Styles from "../../components/styles.astro";
+import Banner from "../../components/banner.astro";
+import Footer from "../../components/footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sandbox Escape - Email</title>
+        <Styles />
+    </head>
+    <body>
+        <Banner />
+        <Navbar />
+        <main>
+            <div class="native-form">
+                <h2>Subscribe</h2>
+
+                <form
+                    method="post"
+                    action="http://mailinglist.sandbox-escape.org/subscription/form"
+                >
+                    <input type="hidden" name="nonce" />
+
+                    <form
+                        method="post"
+                        action="http://mailinglist.sandbox-escape.org/subscription/form"
+                    >
+                        <input type="hidden" name="nonce" />
+
+                        <div class="form-group">
+                            <div class="form-row">
+                                <label for="email">E-mail</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    required
+                                    placeholder="Required"
+                                />
+                            </div>
+                            <div class="form-row">
+                                <label for="name">Name</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Optional"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div hidden>
+                                <input
+                                    id="a624e"
+                                    type="checkbox"
+                                    name="l"
+                                    checked
+                                    value="a624e996-1f35-4b56-af94-1d8d4149a05e"
+                                />
+                                <label
+                                    for="a624e"
+                                    style="min-width: unset; flex: 1;"
+                                >
+                                    Sandbox Escape General Mailinglist
+                                </label>
+                            </div>
+                        </div>
+
+                        <input
+                            type="submit"
+                            class="form-submit"
+                            value="Subscribe"
+                        />
+                    </form>
+
+                    <div
+                        style="display: flex; align-items: center; place-items: center;"
+                    >
+                    </div>
+                    <p class="form-text">Looking for the support e-mail?</p>
+                    <a href="mailto:support@sandbox-escape.org">Click here!</a>
+                </form>
+            </div>
+        </main>
+        <Footer />
+    </body>
+</html>
