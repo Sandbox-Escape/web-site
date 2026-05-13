@@ -1,6 +1,7 @@
 # Intellectual Property (IP)
 
 Copyright: All Rights Reserved unless otherwise stated.
+
 Design Rights: Screenshots permitted with credit to the original site. All other reproduction prohibited.
 
 
