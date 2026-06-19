@@ -1,0 +1,114 @@
+---
+import Navbar from "../../components/navbar.astro";
+import Styles from "../../components/styles.astro";
+import Banner from "../../components/banner.astro";
+import Footer from "../../components/footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sandbox Escape - Volunteers</title>
+        <Styles />
+    </head>
+    <body>
+        <Banner />
+        <Navbar />
+        <main class="container mt-4">
+            <h1>Volunteers</h1>
+
+            <p>
+                These are the people working on making Sandbox Escape the best
+                it can be.
+            </p>
+
+            <hr />
+
+            <div style="display: flex; gap: 10px; overflow: auto;">
+                <div class="profile-card">
+                    <div class="profile-main">
+                        <img
+                            class="profile-avatar"
+                            src="/ponder-avatar.jpeg  "
+                            alt=""
+                        />
+                        <h2 class="profile-name">Ponder</h2>
+                        <p class="profile-paragraph">Founder</p>
+                    </div>
+                    <div class="profile-links">
+                        <h2>Links</h2>
+                        <a href="https://github.com/ponderdev">GitHub</a>
+                        <a href="https://discord.com/users/1362780337314205856"
+                            >Discord</a
+                        >
+                        <a href="https://www.youtube.com/@ImPonder">Youtube</a>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="profile-main">
+                        <img
+                            class="profile-avatar"
+                            src="/nykenik24-avatar.png  "
+                            alt=""
+                        />
+                        <h2 class="profile-name">Nykenik24</h2>
+                        <p class="profile-paragraph">Partial Owner</p>
+                    </div>
+                    <div class="profile-links">
+                        <h2>Links</h2>
+                        <a href="https://discord.com/users/1362780337314205856"
+                            >Discord</a
+                        >
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="profile-main">
+                        <img
+                            class="profile-avatar"
+                            src="/unstoppablecat124-avatar.png  "
+                            alt=""
+                        />
+                        <h2 class="profile-name">unstoppablecat124</h2>
+                        <p class="profile-paragraph">Discord Admin</p>
+                    </div>
+                    <div class="profile-links">
+                        <h2>Links</h2>
+                        <a href="https://discord.com/users/1362780337314205856"
+                            >Discord</a
+                        >
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="profile-main">
+                        <img
+                            class="profile-avatar"
+                            src="/nodata-avatar.png  "
+                            alt=""
+                        />
+                        <h2 class="profile-name">Ivy</h2>
+                        <p class="profile-paragraph">Artist</p>
+                    </div>
+                    <div class="profile-links">
+                        <h2>Links</h2>
+                        <a href="https://discord.com/users/1362780337314205856"
+                            >Discord</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                <b>Note:</b>
+                Some members may not be listed for privacy reasons, lack of role,
+                no recent activity, or other reasons.
+            </p>
+        </main>
+
+        <Footer />
+    </body>
+</html>
