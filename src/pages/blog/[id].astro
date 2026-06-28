@@ -1,9 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
-import Navbar from "../../components/navbar.astro";
-import Styles from "../../components/styles.astro";
-import Banner from "../../components/banner.astro";
-import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
     const posts = await getCollection("blog");
@@ -26,8 +23,10 @@ const { Content } = await render(post);
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>Sandbox Escape - {post.data.title}</title>
-        <Styles />
-        <style>
+        <style is:global>
+            .post-content {
+                max-width: 75%;
+            }
             .post-content h1,
             .post-content h2,
             .post-content h3 {
@@ -94,39 +93,71 @@ const { Content } = await render(post);
         </style>
     </head>
     <body>
-        <Banner />
-        <Navbar />
-        <main>
-            <div class="container mt-4" style="max-width: 700px;">
-                <a
-                    href="/blog"
-                    style="color: var(--accent-blue); font-size: 0.9rem; text-decoration: none;"
-                    >← Blog</a
-                >
-                <h1 style="margin-top: 1rem; font-weight: 700;">
-                    {post.data.title}
-                </h1>
-                <p
-                    style="color: var(--text-label); font-size: 0.85rem; margin-bottom: 2rem;"
-                >
-                    {
-                        post.data.pubDate.toLocaleDateString("en-GB", {
-                            day: "numeric",
-                            month: "short",
-                            year: "numeric",
-                        })
-                    }
-                    {
-                        post.data.tags?.length > 0 && (
-                            <> · {post.data.tags.join(", ")}</>
-                        )
-                    }
-                </p>
-                <div class="post-content">
-                    <Content />
+        <Layout>
+            <main>
+                <div class="container mt-4" style="max-width: 700px;">
+                    <a
+                        href="/blog"
+                        style="color: var(--accent-blue); font-size: 0.9rem; text-decoration: none;"
+                        >← Blog</a
+                    >
+                    <h1 style="margin-top: 1rem; font-weight: 700;">
+                        {post.data.title}
+                    </h1>
+                    <p
+                        style="color: var(--text-label); font-size: 0.85rem; margin-bottom: 2rem;"
+                    >
+                        {
+                            post.data.pubDate.toLocaleDateString("en-GB", {
+                                day: "numeric",
+                                month: "short",
+                                year: "numeric",
+                            })
+                        }
+                        {
+                            post.data.tags?.length > 0 && (
+                                <> · {post.data.tags.join(", ")}</>
+                            )
+                        }
+                    </p>
+                    <div class="post-content">
+                        <Content />
+                        <style is:global>
+                            .post-content img:not(.twemoji) {
+                                max-width: 100%;
+                                border-radius: 12px;
+                                cursor: pointer;
+                                transition: all 0.2s ease;
+                            }
+
+                            .post-content img:not(.twemoji).expanded {
+                                position: fixed;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                max-width: 90vw;
+                                max-height: 90vh;
+                                z-index: 9999;
+                                cursor: zoom-out;
+                                border-radius: 12px;
+                                box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+                            }
+                        </style>
+
+                        <script>
+                            document
+                                .querySelectorAll(
+                                    ".post-content img:not(.twemoji)",
+                                )
+                                .forEach((img) => {
+                                    img.addEventListener("click", () => {
+                                        img.classList.toggle("expanded");
+                                    });
+                                });
+                        </script>
+                    </div>
                 </div>
-            </div>
-        </main>
-        <Footer />
+            </main>
+        </Layout>
     </body>
 </html>
