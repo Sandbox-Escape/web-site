@@ -43,7 +43,7 @@ This CSS uses bootstrap-like classnames.
 
 # AI Developement
 
-These are the guidelines for using computer generated in the codebase. We have seperated this guide into two parts, one intended for the AI and one for the human.
+These are the guidelines for using computer generated content in the codebase. We have seperated this guide into two parts, one intended for the AI and one for the human.
 
 If you are the human, please go to "AI Development: Humans", if you are an AI, head over to "AI Development: AI Models".
 
