@@ -7,130 +7,110 @@ import Footer from "../../components/footer.astro";
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sandbox Escape - Join</title>
-        <Styles />
-    </head>
-    <body>
-        <Banner />
-        <Navbar />
-        <main class="container mt-4">
-            <h1>Before you join...</h1>
-            <p>
-                ...Please understand that we do not ask for much, but you need
-                to have good enough experience with the Astro framework, HTML,
-                CSS, Python, GNU/Linux, and Cubic. If you are good at just one
-                of them, it's still worth applying, just be sure to add that
-                into "I understand" section of the form.
-            </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox Escape - Join</title>
+    <Styles />
+  </head>
+  <body>
+    <Banner />
+    <Navbar />
+    <main class="container mt-4">
+      <h1>Before you join...</h1>
+      <p>
+        ...Please understand that we do not ask for much, but you need to have
+        good enough experience with the Astro framework, HTML, CSS, Python,
+        GNU/Linux, and Cubic. If you are good at just one of them, it's still
+        worth applying, just be sure to add that into "I understand" section of
+        the form.
+      </p>
 
-            <div class="native-form">
-                <form
-                    action="https://formsubmit.co/support@sandbox-escape.org"
-                    method="POST"
-                >
-                    <h2>Personal Information</h2>
-                    <div class="form-group">
-                        <div class="form-row">
-                            <label for="name">Name</label>
-                            <input
-                                type="text"
-                                name="name"
-                                id="name"
-                                class="form-control"
-                                placeholder="Real name, nickname"
-                                required
-                            />
-                        </div>
-                        <div class="form-row">
-                            <label for="email">Email</label>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                class="form-control"
-                                placeholder="example@mail.com"
-                                required
-                            />
-                        </div>
-                    </div>
-
-                    <h2>I understand...</h2>
-                    <div class="form-group">
-                        <div
-                            class="form-row"
-                            style="flex-direction: column; align-items: flex-start !important;"
-                        >
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="I understand Astro"
-                                />
-                                I understand Astro and Web Tech
-                            </label>
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="I understand HTML"
-                                />
-                                I understand HTML
-                            </label>
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="I understand CSS"
-                                />
-                                I understand CSS
-                            </label>
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="I understand JavaScript"
-                                />
-                                I understand JavaScript
-                            </label>
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="I understand Python"
-                                />
-                                I understand Python
-                            </label>
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="I understand GNU/Linux"
-                                />
-                                I understand GNU/Linux
-                            </label>
-                        </div>
-                    </div>
-
-                    <h2>What do you want to tell us</h2>
-                    <div class="form-group">
-                        <textarea
-                            name="message"
-                            id="message"
-                            class="form-control"
-                            rows="5"
-                            placeholder="Hi, I would like to..."></textarea>
-                    </div>
-                    <input
-                        type="hidden"
-                        name="_next"
-                        value="https://sandbox-escape.org/join/thank-you/"
-                    />
-                    <input type="hidden" name="_captcha" value="false" />
-
-                    <button type="submit" class="form-submit"
-                        >Send Application</button
-                    >
-                </form>
+      <div class="native-form">
+        <form
+          action="https://formsubmit.co/support@sandbox-escape.org"
+          method="POST"
+        >
+          <h2>Personal Information</h2>
+          <div class="form-group">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Real name, nickname"
+                required
+              />
             </div>
-        </main>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="example@mail.com"
+                required
+              />
+            </div>
+          </div>
 
-        <Footer />
-    </body>
+          <h2>I understand...</h2>
+          <div class="form-group">
+            <div
+              class="form-row"
+              style="flex-direction: column; align-items: flex-start !important;"
+            >
+              <label>
+                <input type="checkbox" name="I understand Astro" />
+                I understand Astro and Web Tech
+              </label>
+              <label>
+                <input type="checkbox" name="I understand HTML" />
+                I understand HTML
+              </label>
+              <label>
+                <input type="checkbox" name="I understand CSS" />
+                I understand CSS
+              </label>
+              <label>
+                <input type="checkbox" name="I understand JavaScript" />
+                I understand JavaScript
+              </label>
+              <label>
+                <input type="checkbox" name="I understand Python" />
+                I understand Python
+              </label>
+              <label>
+                <input type="checkbox" name="I understand GNU/Linux" />
+                I understand GNU/Linux
+              </label>
+            </div>
+          </div>
+
+          <h2>What do you want to tell us</h2>
+          <div class="form-group">
+            <textarea
+              name="message"
+              id="message"
+              class="form-control"
+              rows="5"
+              placeholder="Hi, I would like to..."></textarea>
+          </div>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://sandbox-escape.org/join/thank-you/"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <button type="submit" class="form-submit">Send Application</button>
+        </form>
+      </div>
+    </main>
+
+    <Footer />
+  </body>
 </html>

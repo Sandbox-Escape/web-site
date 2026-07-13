@@ -4,22 +4,21 @@ Copyright: All Rights Reserved unless otherwise stated.
 
 Design Rights: Screenshots permitted with credit to the original site. All other reproduction prohibited.
 
-
 # CSS Usage
 
-This CSS uses bootstrap-like classnames. 
+This CSS uses bootstrap-like classnames.
 
 ### Component Map
 
-| Element | Class Name | Visual Effect |
-| :--- | :--- | :--- |
-| **Section Header** | `h2` / `.section-title` | Uppercase, grey inset text. |
+| Element             | Class Name               | Visual Effect                          |
+| :------------------ | :----------------------- | :------------------------------------- |
+| **Section Header**  | `h2` / `.section-title`  | Uppercase, grey inset text.            |
 | **Group Container** | `.form-group` / `.group` | Inset white card with rounded corners. |
-| **Row Item** | `.form-row` / `.row` | Flex container with a 0.5px separator. |
-| **Inputs** | `.form-control` | Borderless, right-aligned text fields. |
-| **Primary Action** | `.btn-primary` | Blue action button with 12px radius. |
-| **Checkboxes** | `input[type="checkbox"]` | Standard blue accent toggle style. |
-| **Footer Hint** | `.form-text` | Small grey subtext below groups. |
+| **Row Item**        | `.form-row` / `.row`     | Flex container with a 0.5px separator. |
+| **Inputs**          | `.form-control`          | Borderless, right-aligned text fields. |
+| **Primary Action**  | `.btn-primary`           | Blue action button with 12px radius.   |
+| **Checkboxes**      | `input[type="checkbox"]` | Standard blue accent toggle style.     |
+| **Footer Hint**     | `.form-text`             | Small grey subtext below groups.       |
 
 ### Implementation Example
 
@@ -29,15 +28,15 @@ This CSS uses bootstrap-like classnames.
   <div class="form-group">
     <div class="form-row">
       <label>Email</label>
-      <input type="email" class="form-control" placeholder="Required">
+      <input type="email" class="form-control" placeholder="Required" />
     </div>
     <div class="form-row">
       <label>Notifications</label>
-      <input type="checkbox" checked>
+      <input type="checkbox" checked />
     </div>
   </div>
   <p class="form-text">Configure your sync preferences above.</p>
-  
+
   <button class="btn btn-primary">Save Changes</button>
 </div>
 ```
@@ -68,6 +67,4 @@ description: "Description"
 tags: ["tag1", "tag2"]
 draft: false
 ---
-
-
 ```

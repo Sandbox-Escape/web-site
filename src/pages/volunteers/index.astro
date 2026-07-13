@@ -7,146 +7,161 @@ import Footer from "../../components/footer.astro";
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sandbox Escape - Volunteers</title>
-        <Styles />
-    </head>
-    <body>
-        <Banner />
-        <Navbar />
-        <main class="container mt-4">
-            <h1>Volunteers</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox Escape - Volunteers</title>
+    <Styles />
+  </head>
+  <body>
+    <Banner />
+    <Navbar />
+    <main class="container mt-4">
+      <h1>Volunteers</h1>
 
-            <p>
-                These are the people working on making Sandbox Escape the best
-                it can be.
-            </p>
+      <p>
+        These are the people working on making Sandbox Escape the best it can
+        be.
+      </p>
 
-            <hr />
+      <hr />
 
-            <div style="display: flex; gap: 10px; overflow: auto;">
-                <div class="profile-card">
-                    <div class="profile-main">
-                        <img
-                            class="profile-avatar"
-                            src="/ponder-avatar.jpeg  "
-                            alt=""
-                        />
-                        <h2 class="profile-name">Ponder</h2>
-                        <p class="profile-paragraph">Founder</p>
-                    </div>
-                    <div class="profile-links">
-                        <h2>Links</h2>
-                        <a href="https://github.com/ponderdev">GitHub</a>
-                        <a href="https://discord.com/users/1362780337314205856"
-                            >Discord</a
-                        >
-                        <a href="https://www.youtube.com/@ImPonder">Youtube</a>
-                    </div>
-                </div>
-
-         <div class="profile-card">
-                    <div class="profile-main">
-                        <img
-                            class="profile-avatar"
-                            src="/nodata-avatar.png  "
-                            alt=""
-                        />
-                        <h2 class="profile-name">ks3h0</h2>
-                        <p class="profile-paragraph">Co-Owner</p>
-                    </div>
-                    <div class="profile-links">
-                        <h2>Links</h2>
-                        <a href="https://github.com/ks3h0"
-                            >Github</a
-                        >
-                    </div>
-                </div>
-
-                <div class="profile-card">
-                    <div class="profile-main">
-                        <img
-                            class="profile-avatar"
-                            src="/nykenik24-avatar.png  "
-                            alt=""
-                        />
-                        <h2 class="profile-name">Nykenik24</h2>
-                        <p class="profile-paragraph">Partial Owner</p>
-                    </div>
-                    <div class="profile-links">
-                        <h2>Links</h2>
-                        <a href="https://discord.com/users/927288268054229062"
-                            >Discord</a
-                        >
-                    </div>
-                </div>
-
-                <div class="profile-card">
-                    <div class="profile-main">
-                        <img
-                            class="profile-avatar"
-                            src="/unstoppablecat124-avatar.png  "
-                            alt=""
-                        />
-                        <h2 class="profile-name">unstoppablecat124</h2>
-                        <p class="profile-paragraph">Discord Admin</p>
-                    </div>
-                    <div class="profile-links">
-                        <h2>Links</h2>
-                        <a href="https://discord.com/users/1495255088061747230"
-                            >Discord</a
-                        >
-                    </div>
-                </div>
-
-                <div class="profile-card">
-                    <div class="profile-main">
-                        <img
-                            class="profile-avatar"
-                            src="/nodata-avatar.png  "
-                            alt=""
-                        />
-                        <h2 class="profile-name">Ivy</h2>
-                        <p class="profile-paragraph">Artist</p>
-                    </div>
-                    <div class="profile-links">
-                        <h2>Links</h2>
-                        <a href="https://discord.com/users/1415285816565043312"
-                            >Discord</a
-                        >
-                    </div>
-                </div>
-
-                <div class="profile-card">
-                    <div class="profile-main">
-                        <img
-                            class="profile-avatar"
-                            src="/nodata-avatar.png  "
-                            alt=""
-                        />
-                        <h2 class="profile-name">Decaffienated</h2>
-                        <p class="profile-paragraph">3D Artist</p>
-                    </div>
-                    <div class="profile-links">
-                        <h2>Links</h2>
-                        <a href="https://discord.com/users/1364972375501963285"
-                            >Discord</a
-                        >
-                        <a href="https://decaffiened.neocities.org/">Web-site</a
-                        >
-                    </div>
-                </div>
+      <div class="volunteers-grid">
+        <div class="native-form volunteer-card">
+          <div class="form-group">
+            <div class="form-row volunteer-identity-row">
+              <img class="profile-avatar" src="/ponder-avatar.jpeg" alt="" />
+              <div>
+                <div class="volunteer-name">Ponder</div>
+                <div class="volunteer-role">Founder</div>
+              </div>
             </div>
+            <div class="form-row volunteer-links-row">
+              <span class="volunteer-links-label">Links</span>
+              <a class="volunteer-link" href="https://github.com/ponderdev"
+                >GitHub</a
+              >
+              <a
+                class="volunteer-link"
+                href="https://discord.com/users/1362780337314205856">Discord</a
+              >
+              <a class="volunteer-link" href="https://www.youtube.com/@ImPonder"
+                >Youtube</a
+              >
+            </div>
+          </div>
+        </div>
 
-            <p>
-                <b>Note:</b>
-                Some members may not be listed for privacy reasons, lack of role,
-                no recent activity, or other reasons.
-            </p>
-        </main>
+        <div class="native-form volunteer-card">
+          <div class="form-group">
+            <div class="form-row volunteer-identity-row">
+              <img class="profile-avatar" src="/nodata-avatar.png" alt="" />
+              <div>
+                <div class="volunteer-name">ks3h0</div>
+                <div class="volunteer-role">Co-Owner</div>
+              </div>
+            </div>
+            <div class="form-row volunteer-links-row">
+              <span class="volunteer-links-label">Links</span>
+              <a class="volunteer-link" href="https://github.com/ks3h0"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
 
-        <Footer />
-    </body>
+        <div class="native-form volunteer-card">
+          <div class="form-group">
+            <div class="form-row volunteer-identity-row">
+              <img class="profile-avatar" src="/nykenik24-avatar.png" alt="" />
+              <div>
+                <div class="volunteer-name">Nykenik24</div>
+                <div class="volunteer-role">Partial Owner</div>
+              </div>
+            </div>
+            <div class="form-row volunteer-links-row">
+              <span class="volunteer-links-label">Links</span>
+              <a
+                class="volunteer-link"
+                href="https://discord.com/users/927288268054229062">Discord</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="native-form volunteer-card">
+          <div class="form-group">
+            <div class="form-row volunteer-identity-row">
+              <img
+                class="profile-avatar"
+                src="/unstoppablecat124-avatar.png"
+                alt=""
+              />
+              <div>
+                <div class="volunteer-name">unstoppablecat124</div>
+                <div class="volunteer-role">Discord Admin</div>
+              </div>
+            </div>
+            <div class="form-row volunteer-links-row">
+              <span class="volunteer-links-label">Links</span>
+              <a
+                class="volunteer-link"
+                href="https://discord.com/users/1495255088061747230">Discord</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="native-form volunteer-card">
+          <div class="form-group">
+            <div class="form-row volunteer-identity-row">
+              <img class="profile-avatar" src="/nodata-avatar.png" alt="" />
+              <div>
+                <div class="volunteer-name">Ivy</div>
+                <div class="volunteer-role">Artist</div>
+              </div>
+            </div>
+            <div class="form-row volunteer-links-row">
+              <span class="volunteer-links-label">Links</span>
+              <a
+                class="volunteer-link"
+                href="https://discord.com/users/1415285816565043312">Discord</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="native-form volunteer-card">
+          <div class="form-group">
+            <div class="form-row volunteer-identity-row">
+              <img class="profile-avatar" src="/nodata-avatar.png" alt="" />
+              <div>
+                <div class="volunteer-name">Decaffienated</div>
+                <div class="volunteer-role">3D Artist</div>
+              </div>
+            </div>
+            <div class="form-row volunteer-links-row">
+              <span class="volunteer-links-label">Links</span>
+              <a
+                class="volunteer-link"
+                href="https://discord.com/users/1364972375501963285">Discord</a
+              >
+              <a
+                class="volunteer-link"
+                href="https://decaffiened.neocities.org/">Web-site</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <b>Note:</b>
+        Some members may not be listed for privacy reasons, lack of role, no recent
+        activity, or other reasons.
+      </p>
+    </main>
+
+    <Footer />
+  </body>
 </html>
