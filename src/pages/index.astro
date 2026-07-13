@@ -6,35 +6,31 @@ import Footer from "../components/footer.astro";
 ---
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Sandbox Escape</title>
-        <Styles />
-    </head>
-    <body>
-        <Banner />
-        <Navbar />
-        <main>
-            <img src="/banner.png" width="100%" />
-            <div class="container mt-4">
-                <h1>Services</h1>
-                <p>
-                    We offer free security auditing and software development*.
-                </p>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Sandbox Escape</title>
+    <Styles />
+  </head>
+  <body>
+    <Banner />
+    <Navbar />
+    <main>
+      <img src="/banner.png" width="100%" style="display: block;" />
+      <div class="container mt-4">
+        <h1>Services</h1>
+        <p>We offer free security auditing and software development*.</p>
 
-                <h1>Community</h1>
-                <p>
-                    We run a community about iOS Jailbreaking and Security
-                    Research. Our community is at <a
-                        href="https://discord.gg/qCvRKvkkpw">Discord</a
-                    >
-                </p>
-            </div>
-        </main>
-        <Footer />
-    </body>
+        <h1>Community</h1>
+        <p>
+          We run a community about iOS Jailbreaking and Security Research. Our
+          community is at <a href="https://discord.gg/qCvRKvkkpw">Discord</a>
+        </p>
+      </div>
+    </main>
+    <Footer />
+  </body>
 </html>
