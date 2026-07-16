@@ -96,10 +96,8 @@ const { Content } = await render(post);
     <Layout>
       <main>
         <div class="container mt-4" style="max-width: 700px;">
-          <a
-            href="/blog"
-            style="color: var(--accent-blue); font-size: 0.9rem; text-decoration: none;"
-            >← Blog</a
+          <a href="/blog"
+            ><button class="button--secondary button--small">← Blog</button></a
           >
           <h1 style="margin-top: 1rem; font-weight: 700;">
             {post.data.title}
